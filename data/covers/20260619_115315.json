@@ -1,0 +1,18 @@
+{
+  "core_visual": "一名年轻士兵在战壕中紧握机枪，背景是硝烟弥漫的战场",
+  "scene": "1942年深秋的山西某无名高地，炮火连天，泥土翻涌，硝烟弥漫",
+  "subject": "一名19岁的中国士兵，满脸尘土和血迹，眼神坚毅，手握机枪",
+  "emotion": "敬佩与感动，坚毅中带着悲壮",
+  "camera": "低角度仰拍，聚焦士兵的面部表情和持枪动作，背景虚化突出主体",
+  "lighting": "晨曦中的冷色调，硝烟散射光，营造压抑而真实的战场氛围",
+  "visual_style": "写实历史摄影风格，略带颗粒感和怀旧色调",
+  "background_keywords": [
+    "战壕",
+    "硝烟",
+    "炮弹坑",
+    "碎石堆"
+  ],
+  "image_prompt": "A young Chinese soldier in a muddy trench during a WWII battle, holding a machine gun, face covered in dust and blood, determined expression, low angle shot, early morning light through smoke, realistic historical war photography style, gritty texture, muted colors, intense atmosphere",
+  "negative_prompt": "文字, 标语, 夸张特效, 卡通风格, 过度美化, 科幻元素, 现代装备, 明亮光线",
+  "reason": "封面聚焦普通士兵的真实形象和战场瞬间，避免标题文字，通过低角度和坚毅表情引发点击欲望，契合文章对无名英雄的敬意和感动情绪，适合AI生成写实历史场景"
+}

@@ -1,0 +1,8 @@
+2026/06/19-14:22:48.813 7f78 Reusing MANIFEST C:\Users\kokon\Desktop\My\toutiao_agent_mvp\toutiao_agent\data\browser_profile\toutiao\Default\Local Storage\leveldb/MANIFEST-000001
+2026/06/19-14:22:48.817 7f78 Recovering log #3
+2026/06/19-14:22:48.817 7f78 Level-0 table #3: started
+2026/06/19-14:22:48.822 7f78 Level-0 table #3: 38771 bytes OK
+2026/06/19-14:22:48.822 7f78 Recovering log #4
+2026/06/19-14:22:48.824 7f78 Reusing old log C:\Users\kokon\Desktop\My\toutiao_agent_mvp\toutiao_agent\data\browser_profile\toutiao\Default\Local Storage\leveldb/000004.log 
+2026/06/19-14:22:48.826 7f78 Delete type=0 #3
+2026/06/19-14:22:48.826 7f78 Delete type=2 #5

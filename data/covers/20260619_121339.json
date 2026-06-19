@@ -1,0 +1,19 @@
+{
+  "core_visual": "周恩来总理晚年坐在书桌前，手抚地图上的黄河入海口，神情深沉而平静",
+  "scene": "周恩来总理晚年在北京西花厅的办公室，室内陈设简朴，墙上挂着一幅中国地图",
+  "subject": "周恩来总理的背影或侧影，专注地凝视地图上的黄河入海口",
+  "emotion": "深沉、眷恋、宁静、无私",
+  "camera": "中景，从侧面拍摄，突出人物与地图的互动，背景虚化以聚焦情感",
+  "lighting": "柔和的自然光从窗户斜射，营造怀旧而温暖的氛围",
+  "visual_style": "纪实摄影风格，略带历史感的低饱和度色调，避免过度修饰",
+  "background_keywords": [
+    "黄河入海口",
+    "地图",
+    "简朴办公室",
+    "书桌",
+    "老照片质感"
+  ],
+  "image_prompt": "A middle-aged Zhou Enlai in a simple office, sitting at a wooden desk, his hand gently touching a map of China, focusing on the Yellow River estuary. Soft natural light from a window, warm tones, nostalgic atmosphere, realistic photo style, historical feel, slight film grain, medium shot, side view, emotional depth, quiet dignity.",
+  "negative_prompt": "文字、标语、夸张表情、鲜艳色彩、现代元素、豪华装饰、悲伤哭泣、死亡场景、骨灰、葬礼、特效",
+  "reason": "封面选择周总理晚年凝视黄河入海口的场景，以他生前最真实的瞬间代替死亡或悲伤画面，符合‘真实人物、真实场景、真实情绪’要求。通过柔和光线和纪实风格，营造深沉眷恋感，激发读者点击欲望，同时避免营销号夸张风格，适合AI生成。"
+}
