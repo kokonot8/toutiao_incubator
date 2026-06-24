@@ -1,1 +1,13 @@
 .env
+__pycache__/
+*.pyc
+
+data/browser_profile/
+data/test/
+data/toutiao/
+
+covers/
+outputs/
+
+.vscode/
+.DS_Store

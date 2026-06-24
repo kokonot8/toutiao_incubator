@@ -57,6 +57,58 @@ def _try_upload_file(page, selectors: List[str], file_path: str) -> bool:
             continue
     return False
 
+def _try_upload_cover(page, file_path: str) -> bool:
+    # 1. 点击封面加号
+    try:
+        page.locator(".article-cover-add").first.click(timeout=3000)
+        time.sleep(1)
+    except Exception as e:
+        print("点击封面 + 失败：", repr(e))
+
+    # 2. 设置本地图片文件
+    upload_selectors = [
+        ".btn-upload-handle input[type='file']",
+        ".upload-handler input[type='file']",
+        "input[type='file'][accept*='image']",
+        "input[type='file']",
+    ]
+
+    uploaded = False
+
+    for sel in upload_selectors:
+        try:
+            loc = page.locator(sel).first
+            loc.set_input_files(file_path, timeout=5000)
+            print("封面上传 selector 命中：", sel)
+            uploaded = True
+            break
+        except Exception as e:
+            print("封面上传 selector 失败：", sel, repr(e))
+            continue
+
+    if not uploaded:
+        return False
+
+    # 3. 等待上传处理完成，然后点击“确定”
+    confirm_selectors = [
+        'button[data-e2e="imageUploadConfirm-btn"]',
+        'button:has-text("确定")',
+        'text=确定',
+    ]
+
+    for sel in confirm_selectors:
+        try:
+            page.locator(sel).first.click(timeout=10000)
+            print("已点击封面上传确认按钮：", sel)
+            time.sleep(1)
+            return True
+        except Exception as e:
+            print("点击确认按钮失败：", sel, repr(e))
+            continue
+
+    print("图片已选择，但未能自动点击确认按钮。")
+    return False
+
 
 def _connect_existing_chrome(pw, cdp_url: str):
     print(f"尝试通过 CDP 连接到 Chrome: {cdp_url} ...")
@@ -178,12 +230,7 @@ def publish_via_playwright(post_id: int, headless: bool = False):
             print("未能自动填写正文，请手工粘贴/编辑。")
 
         if image_path and os.path.exists(image_path):
-            file_selectors = [
-                'input[type="file"]',
-                'input[name="cover"]',
-            ]
-
-            uploaded = _try_upload_file(page, file_selectors, image_path)
+            uploaded = _try_upload_cover(page, image_path)
             if uploaded:
                 print("已尝试上传封面图片。")
             else:
